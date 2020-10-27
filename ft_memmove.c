@@ -5,8 +5,8 @@
 /*                                                     +:+                    */
 /*   By: iboeters <iboeters@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/10/29 15:09:17 by iboeters       #+#    #+#                */
-/*   Updated: 2019/11/15 17:37:42 by iboeters      ########   odam.nl         */
+/*   Created: 2019/10/29 15:09:17 by iboeters      #+#    #+#                 */
+/*   Updated: 2020/10/27 10:45:20 by iboeters      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	i = 0;
 	str = (char *)src;
 	str2 = (char *)dst;
-	if ((str == '\0') && (str2 == '\0'))
+	if ((str == NULL) && (str2 == NULL))
 		return (dst);
 	if (dst < src)
 	{

@@ -5,8 +5,8 @@
 /*                                                     +:+                    */
 /*   By: iboeters <iboeters@student.codam.nl>         +#+                     */
 /*                                                   +#+                      */
-/*   Created: 2019/10/29 12:46:27 by iboeters       #+#    #+#                */
-/*   Updated: 2019/11/15 17:37:42 by iboeters      ########   odam.nl         */
+/*   Created: 2019/10/29 12:46:27 by iboeters      #+#    #+#                 */
+/*   Updated: 2020/10/27 10:45:08 by iboeters      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 
 	str = (char*)src;
 	str2 = (char*)dst;
-	if ((str == '\0') && (str2 == '\0'))
+	if ((str == NULL) && (str2 == NULL))
 		return (dst);
 	while (n > 0)
 	{
